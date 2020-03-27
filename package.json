@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "webpack": "webpack",
+    "webpack": "webpack --mode development",
     "start": "npm run webpack && nodemon --exec babel-node -- bin/www"
   },
   "dependencies": {
@@ -13,6 +13,7 @@
     "axios": "^0.19.2",
     "babel-cli": "^6.26.0",
     "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
     "express": "^4.17.1",
     "mongoose": "^5.9.6",
     "nodemon": "^2.0.2",
@@ -39,6 +40,9 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
     "babel-loader": "^8.1.0",
     "css-loader": "^3.4.2",
     "style-loader": "^1.1.3",
